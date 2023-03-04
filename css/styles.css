@@ -266,6 +266,13 @@ a {
   margin-bottom: 8px;
 }
 
+.pref-icon-box {
+  padding: 24px 100px;
+  background-color: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .pref-paragraph {
   line-height: 1.5;
   /* 150% */
@@ -385,6 +392,38 @@ a {
 
 .socialweb-link:is(:hover, :focus) {
   background-color: var(--pressed-state);
+}
+
+/* ----------------Main page (Index) Block5 Customers---------------- */
+
+.customers {
+  background-color: var(--white-color);
+  padding: 120px 0;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
+
+.customers-icons-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.customers-icon-box {
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 /* ----------------Portfolio---------------- */

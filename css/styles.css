@@ -185,7 +185,22 @@ a {
 
 .hero-section {
   background-color: var(--hero-background-color);
+
+  /*max-width: 1440px;*/
+  margin-left: auto;
+  margin-right: auto;
   outline: var(--body-outline);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-image-main.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 
   padding-top: 188px;
@@ -318,6 +333,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   /* 150% */
+  margin-bottom: 8px;
 }
 
 .team-cards {
@@ -338,6 +354,36 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
+}
+
+.socialwebs-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.socialweb-item {
+  width: 40px;
+  height: 40px;
+}
+.socialweb-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+}
+
+.social-item-icon {
+  fill: var(--white-color);
+}
+
+.socialweb-link:is(:hover, :focus) {
+  background-color: var(--pressed-state);
 }
 
 /* ----------------Portfolio---------------- */

@@ -186,7 +186,7 @@ a {
 .hero-section {
   background-color: var(--hero-background-color);
 
-  /*max-width: 1440px;*/
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   outline: var(--body-outline);
@@ -422,8 +422,17 @@ a {
 
 .customers-icon-box {
   padding: 16px 32px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+}
+
+.customers-icon-box:hover {
+  color: var(--pressed-state);
+  border: 1px solid var(--pressed-state);
+}
+
+.customers-icon:hover .customers-icon {
+  fill: currentColor;
 }
 
 /* ----------------Portfolio---------------- */
@@ -497,6 +506,12 @@ a {
 
 .portf-list-box {
   width: calc((100% - 48px) / 3);
+}
+
+.portf-list-box:hover,
+.portf-list-box:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .section-title {
@@ -575,7 +590,7 @@ a {
 }
 
 .footer-socialweb-link:is(:hover, :focus) {
-  background-color: var(--pressed-state);
+  background-color: var(--success-color);
 }
 
 .underground {

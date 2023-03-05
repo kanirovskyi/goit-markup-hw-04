@@ -567,7 +567,6 @@ a {
 
 .footer-socialweb-box-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   color: var(--white-color);
   margin-bottom: 16px;
@@ -576,9 +575,6 @@ a {
 .footer-socialwebs-list {
   display: flex;
   gap: 16px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
 }
 .footer-socialweb-item {
   width: 40px;

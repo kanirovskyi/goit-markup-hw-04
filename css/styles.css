@@ -278,14 +278,14 @@ a {
   color: var(--brand-color);
 }
 
-.pref-icon-box:hover .pref-item-icon {
-  color: var(--success-color);
+.pref-item-icon {
   transition: color 300ms, scale 300ms;
-  scale: 1.25;
+  fill: currentColor;
 }
 
-.pref-item-icon {
-  fill: currentColor;
+.pref-icon-box:hover .pref-item-icon {
+  color: var(--success-color);
+  scale: 1.25;
 }
 
 .pref-paragraph {

@@ -517,6 +517,7 @@ a {
   letter-spacing: 0.04em;
   cursor: pointer;
   border: 1px solid var(--accent-color);
+  border-color: transparent;
 }
 
 .filter-button:hover,

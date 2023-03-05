@@ -279,7 +279,7 @@ a {
 }
 
 .pref-item-icon {
-  transition: color 300ms, scale 300ms;
+  transition: color 350ms, scale 350ms;
   fill: currentColor;
 }
 
@@ -453,13 +453,18 @@ a {
   border: 1px solid var(--pressed-state);
 }
 
-.pref-icon-box.customers-icon:is(:hover, :focus) {
-  color: var(--dark-color);
-}
-
 .customers-icon {
   fill: currentColor;
+  transition: color 350ms, scale 350ms;
 }
+
+.customer-icon-link:hover .customers-icon {
+  scale: 1.1;
+}
+
+/* .pref-icon-box.customers-icon:is(:hover, :focus) {
+  color: var(--dark-color);
+} */
 
 .customers-icon:is(:hover, :focus) {
   fill: currentColor;

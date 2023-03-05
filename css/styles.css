@@ -496,9 +496,13 @@ a {
 }
 
 .filter-button:hover,
+.filter-button:focus,
 .filter-button:active {
   color: var(--white-color);
   background-color: var(--pressed-state);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
 }
 
 .cards-block {
@@ -512,17 +516,27 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-  /*margin-bottom: 32px;*/
 }
 
 .portf-list-box {
   width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portf-list-box:hover,
-.portf-list-box:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portf-link {
+  display: block;
+  color: inherit;
+}
+
+.portf-link:hover {
+  box-shadow: 5px 5px 6px rgba(46, 47, 66, 0.16),
+    1px 3px 6px rgba(46, 47, 66, 0.16), 1px 3px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portf-link:focus {
+  outline-color: var(--brand-color);
+  box-shadow: 5px 5px 6px rgba(46, 47, 66, 0.16),
+    1px 3px 6px rgba(46, 47, 66, 0.16), 1px 3px 1px rgba(46, 47, 66, 0.08);
 }
 
 .section-title {

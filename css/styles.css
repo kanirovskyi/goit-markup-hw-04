@@ -267,10 +267,26 @@ a {
 }
 
 .pref-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   padding: 24px 100px;
   background-color: var(--light-color);
   border-radius: 4px;
   margin-bottom: 8px;
+  color: var(--brand-color);
+  transition: color 250ms, scale 250ms;
+}
+
+.pref-icon-box:hover .pref-item-icon {
+  color: var(--success-color);
+  /* transition: color 250ms, scale 250ms; */
+  scale: 1.25;
+}
+
+.pref-item-icon {
+  fill: currentColor;
 }
 
 .pref-paragraph {
@@ -436,6 +452,10 @@ a {
 .customer-icon-link:is(:hover, :focus) {
   color: var(--pressed-state);
   border: 1px solid var(--pressed-state);
+}
+
+.pref-icon-box.customers-icon:is(:hover, :focus) {
+  color: var(--dark-color);
 }
 
 .customers-icon {

@@ -187,6 +187,7 @@ a {
   background-color: var(--hero-background-color);
 
   max-width: 1440px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: var(--body-outline);
